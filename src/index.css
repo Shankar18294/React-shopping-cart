@@ -1,0 +1,49 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.goto-cart-btn {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+
+.product {
+  border-bottom: 1px #ccc solid;
+  border-bottom-width: 2em;
+}
+
+.inline {
+  display: inline-flex;
+}
+
+body {
+  padding: 10px;
+  margin: 5px;
+  background-color: cornflowerblue;
+}
+
+ul {
+  list-style-type: none;
+
+}
+
+li {
+  padding-left: 10px;
+  margin: 5px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: darkorange;
+  color: black;
+
+}
+.addcart{
+  padding-top: 1.5em;
+  float: right;
+}
