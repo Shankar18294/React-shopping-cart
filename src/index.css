@@ -1,49 +1,47 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
-}
-
-.goto-cart-btn {
-  position: fixed;
-  right: 10px;
-  top: 10px;
-}
-
-.product {
-  border-bottom: 1px #ccc solid;
-  border-bottom-width: 2em;
-}
-
-.inline {
-  display: inline-flex;
-}
-
 body {
-  padding: 10px;
-  margin: 5px;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
   background-color: cornflowerblue;
 }
 
-ul {
-  list-style-type: none;
-
+.headingList {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  /* background-color: #4CAF50; */
+  color: white;
+}
+li{
+  padding-bottom: 2em;
 }
 
-li {
-  padding-left: 10px;
-  margin: 5px;
-}
 
-button {
-  padding: 10px;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  padding: 5px;
-  background-color: darkorange;
-  color: black;
-
-}
-.addcart{
-  padding-top: 1.5em;
+li.productQunatity {
+  margin-right: 36em;
   float: right;
+}
+
+li.productPrice {
+  margin-left:7.5em;
+}
+
+li.btn {
+  margin-left: 10%;
+}
+
+.goto-cart-btn {
+  margin-top: 50px;
+  margin-right: 1em;
+  float: right;
+  background-color:orange;  
+}
+
+ul li {
+  display: inline;
+  margin-left: 7em;
+  padding: 0 0 0 2m;
+}
+h2{
+  text-align: center;
 }
