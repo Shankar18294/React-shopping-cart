@@ -5,22 +5,15 @@ body {
   background-color: cornflowerblue;
 }
 
-.headingList {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  /* background-color: #4CAF50; */
-  color: white;
-}
 li{
   padding-bottom: 2em;
 }
 
 
-li.productQunatity {
+/* li.productQunatity {
   margin-right: 36em;
   float: right;
-}
+} */
 
 li.productPrice {
   margin-left:7.5em;
@@ -30,9 +23,10 @@ li.btn {
   margin-left: 10%;
 }
 
-.goto-cart-btn {
+button.goto-cart-btn {
   margin-top: 50px;
-  margin-right: 1em;
+  margin-right: 25em;
+  padding: 1em;
   float: right;
   background-color:orange;  
 }
@@ -40,8 +34,40 @@ li.btn {
 ul li {
   display: inline;
   margin-left: 7em;
-  padding: 0 0 0 2m;
+  text-align: center;
+  /* padding: 0 0 0 0em; */
 }
 h2{
-  text-align: center;
+  /* text-align: center; */
+  padding-top: 2em;
+  margin-left: 23em;
+  color: brown;
+}
+ul.productList{
+  margin-left: 10em;
+}
+ul.headingListCart{
+    /* padding-top: 12px; */
+  /* padding-bottom: 12px; */
+  text-align: left;
+  /* word-spacing: 1em; */
+  padding-right: 1em;
+  margin-left: 10em;
+  color: white;
+}
+ul.headdingListShop{
+    padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  margin-left: 10em;
+  color: white;
+}
+ul.cartList{
+  margin-left: 10em;
+  padding-left: 4em;
+}
+span.totalDisplay{
+  color: brown;
+  padding-top: 1em;
+  margin-left: 20em;
 }
