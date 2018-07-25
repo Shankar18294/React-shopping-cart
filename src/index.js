@@ -84,9 +84,9 @@ const CartList = () => (
     <div>
         <h2>Cart List</h2>
         <ul className="headingListCart">
-            <li><b>Number</b></li>
+            <li className="numberList"><b>Number</b></li>
             <li><b>Name</b></li>
-            <li><b>Price</b></li>
+            <li className="priceList"><b>Price</b></li>
             <li><b>Quantity</b></li>
         </ul>
         <ul className="cartList">{
