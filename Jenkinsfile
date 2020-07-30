@@ -5,9 +5,9 @@ pipeline {
     
   stages {
         
-    stage('Git') {
+    stage('checkout') {
       steps {
-        git 'https://github.com/basavarajbhavi/shopping-cart.git'
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '216e5c2e-1262-4284-b659-457d9f80b415', url: 'https://github.com/Shankar18294/React-shopping-cart.git']]])
       }
     }
      
