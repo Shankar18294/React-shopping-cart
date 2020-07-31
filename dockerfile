@@ -1,5 +1,5 @@
 # pull official base image
-FROM node:nginx
+FROM node:latest
 
 # set working directory
 WORKDIR '/app'
