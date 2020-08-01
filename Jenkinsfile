@@ -1,25 +1,11 @@
-pipeline {
-  agent any
-    
-  tools {nodejs "nodejs"}
-    
-  stages {
-        
-    stage('checkout') {
-      steps {
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '216e5c2e-1262-4284-b659-457d9f80b415', url: 'https://github.com/Shankar18294/React-shopping-cart.git']]])
-      }
-    }
-     
-    stage('Dependencies') {
-      steps {
-        sh 'npm install'
-      }
-    }
-    stage('start') {
-      steps {
-         sh 'npm start'
-      }
-    }
-  }
-}
+properties([parameters([choice(choices: ['master', 'dev', 'release'], description: '', name: 'branch')]), pipelineTriggers([githubPush()])])
+   node{
+      
+      stage('Scm Checkout') {
+          
+          
+          echo "pulling the changes from the branch ${params.branch}"
+          git url: 'https://github.com/basavarajbhavi/shopping-cart.git' , branch:"${params.branch}"
+           }
+       }                  
+      
